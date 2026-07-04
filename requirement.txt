@@ -1,0 +1,6 @@
+=> flat icon cli 
+npm i @flaticon/flaticon-uicons
+
+=>react rounter 
+npm i react-router-dom@6
+

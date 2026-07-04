@@ -1,0 +1,232 @@
+.country_details_container {
+    max-width: 1250px;
+    margin-inline: auto;
+    padding-inline: 24px;
+}
+
+.country_details_card {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    margin-top: 64px;
+}
+
+/* Left Side */
+
+.country_details_left {
+    flex: 1;
+}
+
+.country_details_left img {
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Right Side */
+
+.country_details_right {
+    flex: 1;
+}
+
+.country_name {
+    width: 280px;
+    height: 34px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+/* Details */
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.details_left,
+.details_right {
+    flex: 1;
+}
+
+.details p {
+    width: 160px;
+    height: 22px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Border Countries */
+
+.details_border_country {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.border_country_btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+}
+
+.border_country_btn a {
+    width: 90px;
+    height: 34px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* ===========================
+   Shimmer Effect
+=========================== */
+
+.country_details_left img,
+.country_name,
+.details p,
+.border_country_btn a {
+    background: linear-gradient(
+        90deg,
+        #e0e0e0 25%,
+        #f5f5f5 50%,
+        #e0e0e0 75%
+    );
+
+    background-size: 200% 100%;
+    animation: shimmer 1.4s linear infinite;
+}
+
+@keyframes shimmer {
+
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 576px) {
+
+    .country_details_container {
+        padding-inline: 18px;
+    }
+
+    .country_details_card {
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 40px;
+    }
+
+    .country_details_left,
+    .country_details_right {
+        width: 100%;
+    }
+
+    .country_details_left img {
+        height: 220px;
+    }
+
+    .country_name {
+        width: 200px;
+        height: 30px;
+    }
+
+    .details {
+        flex-direction: column;
+        gap: 18px;
+        margin-bottom: 30px;
+    }
+
+    .details p {
+        width: 180px;
+        height: 20px;
+    }
+
+    .details_border_country {
+        flex-direction: column;
+    }
+
+}
+
+/* ===========================
+   Large Mobile
+=========================== */
+
+@media (min-width:577px) and (max-width:768px) {
+
+    .country_details_card {
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    .country_details_left,
+    .country_details_right {
+        width: 100%;
+    }
+
+    .country_details_left img {
+        height: 260px;
+    }
+
+    .details {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (min-width:769px) and (max-width:992px) {
+
+    .country_details_card {
+        gap: 40px;
+    }
+
+    .details {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+/* ===========================
+   Small Laptop
+=========================== */
+
+@media (min-width:993px) and (max-width:1200px) {
+
+    .country_details_card {
+        gap: 50px;
+    }
+
+}
+
+/* ===========================
+   Large Desktop
+=========================== */
+
+@media (min-width:1400px) {
+
+    .country_details_container {
+        max-width: 1400px;
+    }
+
+    .country_details_card {
+        gap: 90px;
+    }
+
+}
