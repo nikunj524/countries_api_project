@@ -14,7 +14,7 @@ export default function Header() {
         <>
             <div className="header_container">
                 <div className="header_content">
-                    <a href="#"  >Where in the Worlds ?</a>
+                    <a href="#"  >Where in the World ?</a>
                     <div className="theme_chanage">
                         <button
                             onClick={() => {
